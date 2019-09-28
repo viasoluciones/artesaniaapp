@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Category Page.
+ * Category Page.
  */
 
  get_header();

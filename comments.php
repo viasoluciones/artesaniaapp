@@ -1,9 +1,7 @@
 <?php
 /**
- * The template for displaying comments.
+ * Comments.
  *
- * This is the template that displays the area of the page that contains both the current comments
- * and the comment form.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -12,10 +10,10 @@
 
 if (comments_open ()) { ?>
 									<div class="comments-container margin-top-50">
-<?php									
+<?php
 			if (is_singular('listing')){
-			
-			
+
+
 												if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
 													die('Please do not load this page directly. Thanks!');
 												}
@@ -23,9 +21,9 @@ if (comments_open ()) { ?>
 													<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'listingpro'); ?></p><?php
 													return;
 												}
-												
+
 												if (have_comments ()) { ?>
-													
+
 													<div class="comments-container padding-left-40 padding-right-40 clearfix margin-top-50">
 														<div class="comments-header clearfix">
 															<h3>
@@ -48,27 +46,27 @@ if (comments_open ()) { ?>
 													</div>';
 
 												$fields[ 'comment_notes_after' ] = '';
-											
+
 												$fields[ 'title_reply' ] = __('Rate us and Write a Review', 'listingpro');
-												
+
 												$fields[ 'title_reply_to' ] = __('Leave a Reply to %s', 'listingpro');
-												
+
 												$fields[ 'class_submit' ] = 'lp-review-btn btn-second-hover';
-												
+
 												?>
 												<div class="comments-form padding-left-40 padding-right-40 padding-bottom-40 clearfix" id="submitreview">
-												
+
 												<div class="comments-inner-container margin-top-10">
-												
+
 													<?php
-														comment_form($fields);  
+														comment_form($fields);
 														?>
 												</div>
 												</div>
 
-			<?php 
+			<?php
 		}else{
-		
+
 
 												if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
 													die('Please do not load this page directly. Thanks!');
@@ -77,9 +75,9 @@ if (comments_open ()) { ?>
 													<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'listingpro'); ?></p><?php
 													return;
 												}
-												
+
 												if (have_comments ()) { ?>
-													
+
 													<div class="comments-container clearfix">
 														<div class="comments-header clearfix">
 															<h3>
@@ -95,25 +93,25 @@ if (comments_open ()) { ?>
 
 
 												$fields[ 'comment_notes_before' ]=$fields[ 'comment_notes_after' ] = '';
-											
+
 												$fields[ 'title_reply' ] = __('Leave a Comment', 'listingpro');
-												
+
 												$fields[ 'title_reply_to' ] = __('Leave a Reply to %s', 'listingpro');
-												
+
 												$fields[ 'class_submit' ] = 'lp-review-btn btn-second-hover';
 												$fields[ 'label_submit' ] = __('Post a comment', 'listingpro');
-												
+
 												?>
 												<div class="comments-form">
 													<div class="comments-inner-container">
 														<?php
-														comment_form($fields);  
+														comment_form($fields);
 														?>
 													</div>
 												</div>
 
 	<?php } ?>
 		</div>
-<?php	} 
+<?php	}
  echo paginate_comments_links()
 ?>

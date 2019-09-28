@@ -1,6 +1,6 @@
 		<?php
 /**
- *
+ * Author
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
@@ -38,7 +38,7 @@ $blog_sidebar_style   =   $listingpro_options['blog_sidebar_style'];
 							 echo '<div class="col-md-4"><div class="sidebar-style2 listing-second-view">';
 							get_sidebar();
 							echo '</div></div>';
-							
+
 						}
                 }
                 if( $blog_template == 'right_sidebar' || $blog_template == 'left_sidebar' )
@@ -62,7 +62,7 @@ $blog_sidebar_style   =   $listingpro_options['blog_sidebar_style'];
 							 echo '<div class="col-md-4"><div class="sidebar-style2 listing-second-view">';
 							get_sidebar();
 							echo '</div></div>';
-							
+
 						}
                 }
                 ?>
