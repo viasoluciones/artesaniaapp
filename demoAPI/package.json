@@ -1,12 +1,12 @@
 {
-  "name": "aptitud-emprendedora",
-  "version": "2.0.0",
-  "description": "La nueva web de aptitud",
+  "name": "artesanias.app",
+  "version": "1.0.0",
+  "description": "En esta demo consumiremos la API que conecta a una base de datos de los artesanos",
   "main": "gulpfile,js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Gerson Perez Aguilar",
+  "author": "Viasoluciones",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
