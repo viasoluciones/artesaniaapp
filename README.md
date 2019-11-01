@@ -1,4 +1,4 @@
-# artesanias.app
+# artesaniaapp
 
 **Plataforma para conectar los negocios artesanales del Perú***
 
@@ -10,4 +10,4 @@ Esta dirigido para artesanos, tecnicos, profesionales, diseñadores, CITES, vend
  Por medio de la Geolocalizado, Certificado por la Cites, Clasificado por Lineas y Sublineas, Denominación de Origen, Oferta de productos, Lista de agentes.
 
 **Link de la plataforma**<br>
-https://artesanias.app
+https://artesania.app
